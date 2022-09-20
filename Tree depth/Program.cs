@@ -1,5 +1,6 @@
 ﻿using Tree_depth;
 
+//Structure that was provided
 Branch tree = new Branch();
 Branch branch1 = new Branch();
 Branch branch2 = new Branch();
@@ -19,8 +20,9 @@ branch1.Add(branch3);
 branch1.Add(branch4);
 tree.Add(branch1);
 tree.Add(branch2);
-Console.WriteLine(tree.GetHeight());
+Console.WriteLine("The depth of the tree is: {0}", tree.GetDepth());
 
+// A linear tree with 5 nodes
 Branch LinearTree = new Branch();
 Branch LinearBranch = new Branch();
 Branch LinearBranch2 = new Branch();
@@ -32,4 +34,4 @@ LinearBranch3.Add(LinearBranch4);
 LinearBranch2.Add(LinearBranch3);
 LinearBranch.Add(LinearBranch2);
 LinearTree.Add(LinearBranch);
-Console.WriteLine(LinearTree.GetHeight());
+Console.WriteLine("The depth of the tree is: {0}", LinearTree.GetDepth());
